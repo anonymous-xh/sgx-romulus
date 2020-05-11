@@ -1,0 +1,2 @@
+#files and dirs to ignore in remote 
+./.vscode
