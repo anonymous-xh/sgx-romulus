@@ -590,7 +590,7 @@ public:
             // Check if another thread executed my mutation
             if (fc[tid * CLPAD].load(std::memory_order_acquire) == nullptr)
                 return;
-            sgx_printf("Thread pause\n");
+            //sgx_printf("Thread pause\n");
             Pause(); 
         }
 
