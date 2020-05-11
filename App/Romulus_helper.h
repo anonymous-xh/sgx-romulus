@@ -20,7 +20,7 @@
 #include "Types.h" //persistent header
 
 #define MMAP_FILENAME "/dev/shm/romuluslog_shared"
-#define MAX_SIZE 10*1024*1024 
+#define MAX_SIZE 400*1024*1024 
 #define MAGIC_ID 0x1337BAB2
 
 #if defined(__cplusplus)
