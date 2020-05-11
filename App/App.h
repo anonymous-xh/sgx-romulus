@@ -1,5 +1,5 @@
 /**
- * Author: Peterson Yuhala
+ * Author: xxx xxx
  */
 
 #ifndef _APP_H_

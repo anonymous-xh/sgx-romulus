@@ -1,12 +1,12 @@
 /**
- * Author: Peterson Yuhala
+ * Author: xxx xxx
  * Modified version of RomulusLog library compatible
  * with intel SGX.
  * 
  * Copyright 2017-2018
- *   Andreia Correia <andreia.veiga@unine.ch>
- *   Pascal Felber <pascal.felber@unine.ch>
- *   Pedro Ramalhete <pramalhe@gmail.com>
+ *   xxx xxx <xxx.veiga@xxxxxx>
+ *   xxx xxx <xxx.xxx@xxxxxx>
+ *   xxx xxxte <pxxx@gmail.com>
  * 
  */
 
@@ -855,7 +855,7 @@ public:
         }
         else
         {
-            //Peterson Yuhala: commented out thread related code
+            //xxx xxx: commented out thread related code
             while (!gRomLog.rwlock.tryExclusiveLock()) Pause();
             gRomLog.compareMainAndBack();
             gRomLog.rwlock.exclusiveUnlock();

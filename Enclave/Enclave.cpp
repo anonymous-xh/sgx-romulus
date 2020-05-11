@@ -1,5 +1,5 @@
 /**
- * Author: Peterson Yuhala
+ * Author: xxx xxx
  * sgx-remus: sgx compatible nvram library based on romulus
  */
 

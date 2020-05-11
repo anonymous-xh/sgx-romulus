@@ -1,5 +1,5 @@
 /**
- * Author: Peterson Yuhala
+ * Author: xxx xxx
  */
 
 #ifndef ROMULUS_HELPER_

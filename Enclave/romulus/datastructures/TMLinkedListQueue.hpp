@@ -1,8 +1,8 @@
 /*
  * Copyright 2017-2018
- *   Andreia Correia <andreia.veiga@unine.ch>
- *   Pascal Felber <pascal.felber@unine.ch>
- *   Pedro Ramalhete <pramalhe@gmail.com>
+ *   xxx xxx <xxx.veiga@xxxxxx>
+ *   xxx xxx <xxx.xxx@xxxxxx>
+ *   xxx xxxte <pxxx@gmail.com>
  *
  * This work is published under the MIT license. See LICENSE.TXT
  */

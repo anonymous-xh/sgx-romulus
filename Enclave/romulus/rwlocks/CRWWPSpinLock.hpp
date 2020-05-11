@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (c) 2014-2017, Pedro Ramalhete, Andreia Correia
+ * Copyright (c) 2014-2017, xxx xxxte, xxx xxx
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -64,8 +64,8 @@
  * C-RW-WP paper:         http://dl.acm.org/citation.cfm?id=2442532
  *
  * <p>
- * @author Pedro Ramalhete
- * @author Andreia Correia
+ * @author xxx xxxte
+ * @author xxx xxx
  */
 class CRWWPSpinLock {
 

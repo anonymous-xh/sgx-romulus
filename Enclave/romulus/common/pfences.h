@@ -18,7 +18,7 @@
 
 //#define PMEM_PATH "/dev/shm."
 
-//Reference: Romulus by Pedro and Andreia :-)
+//Reference: Romulus by xxx and xxx :-)
 //------------------------------
 #if defined(PWB_IS_CLFLUSH)
 

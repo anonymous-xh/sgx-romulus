@@ -3,7 +3,7 @@
 /*
  * This is a revised version of malloc/free/realloc originally written by Doug Lea.
  * The aim of this  version is to provide a library compatible with the intel SGX platform.
- * Revised by: Peterson Yuhala
+ * Revised by: xxx xxx
  * / 
 
 
@@ -532,7 +532,7 @@ MAX_RELEASE_CHECK_RATE   default: 4095 unless not HAVE_MMAP
 */
 #include "RomulusLogSGX.hpp" //-->includes Types.h
 
-//modification by Andreia
+//modification by xxx
 #define ONLY_MSPACES 1
 
 /* Version identifier to allow people to support multiple versions */

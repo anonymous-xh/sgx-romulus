@@ -1,6 +1,6 @@
 /**
- * Author: Peterson Yuhala
- * Based of RomulusLog code by: Andreia Correia, Pascal Felber, Pedro Ramalhete
+ * Author: xxx xxx
+ * Based of RomulusLog code by: xxx xxx, xxx xxx, xxx xxxte
  */
 
 #ifndef ROMSGX_H

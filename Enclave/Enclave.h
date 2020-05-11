@@ -1,5 +1,5 @@
 /**
- * Author: Peterson Yuhala
+ * Author: xxx xxx
  */
 
 #ifndef _ENCLAVE_H_

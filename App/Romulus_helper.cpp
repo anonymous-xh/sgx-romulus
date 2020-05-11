@@ -1,5 +1,5 @@
 /**
- * Author: Peterson Yuhala
+ * Author: xxx xxx
  */
 
 /* This module does mmaps/munmaps, and initializes/creates the persistent header and passes this to sgx-remus */
