@@ -81,7 +81,7 @@ private:
             }
         }
         bool tryLock() {
-            sgx_printf("thread trying lock\n");
+            //sgx_printf("thread trying lock\n");
             if(writers.load()==1)return false;
             int tmp = 0;
             return writers.compare_exchange_strong(tmp,1);
@@ -142,7 +142,7 @@ public:
     }
 
     bool tryExclusiveLock() {
-        sgx_printf("trying exc lock\n");
+        //sgx_printf("trying exc lock\n");
         return splock.tryLock();
     }
 
