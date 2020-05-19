@@ -9,6 +9,7 @@
 #include "Enclave_t.h"  /* print_string */
 #include <stdarg.h>
 #include <stdio.h>
+#include "checks.h"
 //#include <thread>
 #include "romulus/datastructures/TMStack.hpp"
 
@@ -22,6 +23,16 @@ uint8_t *base_addr_in = NULL; //this will receive the value of the
 int __cxa_thread_atexit(void (*dtor)(void *), void *obj, void *dso_symbol) {}
 
 int sgx_printf(const char *fmt, ...)
+{
+    char buf[BUFSIZ] = {'\0'};
+    va_list ap;
+    va_start(ap, fmt);
+    vsnprintf(buf, BUFSIZ, fmt, ap);
+    va_end(ap);
+    ocall_print_string(buf);
+    return (int)strnlen(buf, BUFSIZ - 1) + 1;
+}
+int printf(const char *fmt, ...)
 {
     char buf[BUFSIZ] = {'\0'};
     va_list ap;
@@ -48,7 +59,13 @@ void empty_ecall()
 
 void ecall_init(void *per_out, uint8_t *base_addr_out)
 {
-    //pointer safety/validity checks: TODO
+    CHECK_REF_POINTER(per_out, sizeof(PersistentHeader));
+    CHECK_REF_POINTER(base_addr_out, sizeof(uint8_t));
+    /**
+     * load fence after pointer checks ensures the checks are done 
+     * before any assignment. 
+     */   
+    sgx_lfence();
 
     base_addr_in = base_addr_out;
     if (base_addr_in == NULL)
@@ -94,7 +111,7 @@ void do_work(int val, size_t tid)
         PStack *pstack = RomulusLog::get_object<PStack>(0);
         // sgx_printf("Popped two items: %ld and %ld\n", pstack->pop(), pstack->pop());
         // This one should be "EMTPY" which is 999999999
-        sgx_printf("Worker: %d Popped : %ld\n",tid, pstack->pop());
+        sgx_printf("Worker: %d Popped : %ld\n", tid, pstack->pop());
     });
 
     // Add items to the persistent stack

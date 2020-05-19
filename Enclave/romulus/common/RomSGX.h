@@ -69,6 +69,7 @@ void do_mmap();
 void do_close();
 void abort_h();
 int sgx_printf(const char* fmt, ...);
+int printf(const char* fmt, ...);
 
 
 #if defined(__cplusplus)
